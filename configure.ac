@@ -38,5 +38,11 @@ AC_CONFIG_FILES([Makefile])
 AM_COND_IF([VENDOR_QCOM],
         [AC_CONFIG_FILES([qcom/Makefile qcom/kvh2xml.pc])])
 
+AC_CONFIG_FILES([ \
+        linux/Makefile \
+        linux/kvh2xml.pc \
+        linux/reference/Makefile \
+        linux/reference/config.pc
+        ])
 
 AC_OUTPUT
