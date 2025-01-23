@@ -24,18 +24,19 @@ AC_PROG_CPP
 AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_MAKE_SET
+AM_PROG_AR
 PKG_PROG_PKG_CONFIG
 
 AC_ARG_WITH([qcom],
-    AS_HELP_STRING([Use qcom based configuration (default is yes)]),
+    AS_HELP_STRING([Use qcom based configuration (default is no)]),
         [with_qcom=$withval],
-	    [with_qcom=yes])
-	    AM_CONDITIONAL([VENDOR_QCOM], [test "x${with_qcom}" = "xyes"])
+        [with_qcom=no])
+AM_CONDITIONAL([VENDOR_QCOM], [test "x${with_qcom}" = "xyes"])
 
-AC_CONFIG_FILES([ \
-        Makefile \
-	qcom/Makefile \
-        qcom/kvh2xml.pc
-        ])
+AC_CONFIG_FILES([Makefile])
+
+AM_COND_IF([VENDOR_QCOM],
+        [AC_CONFIG_FILES([qcom/Makefile qcom/kvh2xml.pc])])
+
 
 AC_OUTPUT
