@@ -4,7 +4,7 @@ libdir=@libdir@
 includedir=@includedir@
 
 Name: k2h2xml
-Description: kvh2xml for Audio-Reach
+Description: kvh2xml for AudioReach
 Version: @VERSION@
 Libs: -L${libdir}
 Cflags: -I${includedir}
