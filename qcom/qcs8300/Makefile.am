@@ -7,7 +7,7 @@ AM_CFLAGS = -Wall -Werror
 config_acdbdata = acdbdata/acdb_cal.acdb\
 		 acdbdata/workspaceFileXml.qwsp
 
-config_acdbdatadir = $(sysconfdir)/acdbdata/qcs8300/
+config_acdbdatadir = $(sysconfdir)/acdbdata/MONACO_EVK/
 config_acdbdata_DATA = $(config_acdbdata)
 
 config_carddef = card-defs.xml
