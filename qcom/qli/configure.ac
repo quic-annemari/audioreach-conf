@@ -28,6 +28,7 @@ PKG_PROG_PKG_CONFIG
 
 AC_CONFIG_FILES([ \
     qcm6490/Makefile qcm6490/config.pc \
+    qcs615/Makefile  qcs615/config.pc  \
     qcs8275/Makefile qcs8275/config.pc \
     qcs8300/Makefile qcs8300/config.pc \
     qcs9100/Makefile qcs9100/config.pc \
