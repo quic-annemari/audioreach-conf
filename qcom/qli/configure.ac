@@ -34,6 +34,7 @@ AC_CONFIG_FILES([ \
     qcs9075/Makefile qcs9075/config.pc \
     sm8750/Makefile  sm8750/config.pc \
     GLYMUR/Makefile  GLYMUR/config.pc \
+    MAHUA/Makefile   MAHUA/config.pc \
     X1E80100/Makefile X1E80100/config.pc
     ])
 
