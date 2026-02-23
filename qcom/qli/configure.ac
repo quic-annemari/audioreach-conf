@@ -33,7 +33,8 @@ AC_CONFIG_FILES([ \
     qcs9100/Makefile qcs9100/config.pc \
     qcs9075/Makefile qcs9075/config.pc \
     sm8750/Makefile  sm8750/config.pc \
-    GLYMUR/Makefile  GLYMUR/config.pc
+    GLYMUR/Makefile  GLYMUR/config.pc \
+    X1E80100/Makefile X1E80100/config.pc
     ])
 
 AC_OUTPUT
