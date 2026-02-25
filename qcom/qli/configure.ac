@@ -25,6 +25,13 @@ AC_PROG_MAKE_SET
 AM_PROG_AR
 PKG_PROG_PKG_CONFIG
 
+m4_define([LT_MAJOR], [1])
+m4_define([LT_MINOR], [0])
+m4_define([LT_PATCH], [0])
+
+AC_SUBST([LT_VERSION], LT_MAJOR.LT_MINOR.LT_PATCH)
+AC_SUBST([LT_VERSION_NUMBER], LT_MAJOR:LT_MINOR:LT_PATCH)
+
 AC_CONFIG_FILES([ \
     qcm6490/Makefile qcm6490/config.pc \
     qcs615/Makefile  qcs615/config.pc  \
