@@ -33,6 +33,13 @@ AC_ARG_WITH([qcom],
         [with_qcom=no])
 AM_CONDITIONAL([VENDOR_QCOM], [test "x${with_qcom}" = "xyes"])
 
+AC_ARG_WITH([nxp],
+    AS_HELP_STRING([Use nxp based configuration (default is no)]),
+        [with_nxp=$withval],
+        [with_nxp=no])
+AM_CONDITIONAL([VENDOR_NXP], [test "x${with_nxp}" = "xyes"])
+
+
 AC_CONFIG_FILES([ \
         Makefile \
         linux/Makefile \
