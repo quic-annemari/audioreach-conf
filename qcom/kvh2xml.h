@@ -997,6 +997,7 @@ enum Tag_Definitions {
     TAG_MODULE_WNR                  = 0xC0000063, /**< @h2xmle_name {"module_wnr"} @h2xmle_description {Tag to be used to identify the MIID of WNR module} */
     TAG_MODULE_SDZ                  = 0xC0000064, /**< @h2xmle_name {"module_sdz"} @h2xmle_description {Tag to be used to identify the MIID of speaker diarization module} */
     MODULE_SA_HDT                   = 0xC0000066, /**< @h2xmle_name {"module_sa_hdt"} @h2xmle_description {Tag to be used to identify the MIID of spatializer headtracking module} */
+    TAG_VOICE_NS_RX_CONFIG          = 0xC000006C, /**< @h2xmle_name {"module_voice_ns_rx_config"} @h2xmle_description {Tag to be used to set dynamic transition mode on FNN_NS module} */
 };
 typedef enum Tag_Definitions Tag_Definitions;
 
