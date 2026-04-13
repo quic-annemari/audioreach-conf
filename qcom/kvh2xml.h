@@ -408,6 +408,7 @@ enum Key_Values_StreamPP_RX {
 */
 enum Key_Values_StreamPP_TX {
     STREAMPP_TX_DEFAULT = 0xB0000001,   /**< @h2xmle_name {StreamPP_Tx_Default} @h2xmle_description {Default PP Capture}*/
+    STREAMPP_TX_VAD     = 0xB0000002,   /**< @h2xmle_name {StreamPP_Tx_Vad} @h2xmle_description {Used to pick VAD stream PP SG}*/
 };
 
 /**
