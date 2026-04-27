@@ -408,6 +408,7 @@ enum Key_Values_StreamPP_RX {
 */
 enum Key_Values_StreamPP_TX {
     STREAMPP_TX_DEFAULT = 0xB0000001,   /**< @h2xmle_name {StreamPP_Tx_Default} @h2xmle_description {Default PP Capture}*/
+    STREAMPP_TX_VAD     = 0xB0000002,   /**< @h2xmle_name {StreamPP_Tx_Vad} @h2xmle_description {Used to pick VAD stream PP SG}*/
 };
 
 /**
@@ -586,6 +587,7 @@ enum Key_Values_SP_Dev_Map {
     LEFT_RIGHT                      = 3,    /**< @h2xmle_name {Left_Right}*/
     RIGHT_MONO_WITH_DISABLED_2SP    = 4,    /**< @h2xmle_name {Left_Mono_with_disable_2sp}*/
     LEFT_RIGHT_WITH_DISABLED_2SP    = 5,    /**< @h2xmle_name {Left_Right_with_disable_2sp}*/
+    LEFT_RIGHT_QUAD                 = 6,    /**< @h2xmle_name {Left_Right_Quad}*/
 };
 
 /**
@@ -598,6 +600,7 @@ enum Key_Values_SP_VI_Map {
     STEREO_SPKR                     = 2,    /**< @h2xmle_name {StereoSpeaker}*/
     RIGHT_SPKR_WITH_DISABLED_2SP    = 3,    /**< @h2xmle_name {RightSpeaker_with_disable_2sp}*/
     STEREO_SPKR_WITH_DISABLED_2SP   = 4,    /**< @h2xmle_name {StereoSpeaker_with_disable_2sp}*/
+    QUAD_SPKR                       = 5,    /**< @h2xmle_name {QuadSpeaker}*/
 };
 
 /**
