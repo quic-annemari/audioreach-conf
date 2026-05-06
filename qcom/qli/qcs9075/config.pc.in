@@ -5,6 +5,6 @@ includedir=@includedir@
 
 Name: config
 Description: config library
-Version: @VERSION@
+Version: @LT_VERSION@
 Libs: -L${libdir}
 Cflags: -I${includedir}/acdbdata
