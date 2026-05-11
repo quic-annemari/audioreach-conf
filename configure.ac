@@ -32,6 +32,12 @@ AC_ARG_WITH([qcom],
         [with_qcom=no])
 AM_CONDITIONAL([VENDOR_QCOM], [test "x${with_qcom}" = "xyes"])
 
+AC_ARG_WITH([libalsa],
+    AS_HELP_STRING([--with-libalsa], [Install ALSA and UCM configuration files (default is no)]),
+        [with_libalsa=$withval],
+        [with_libalsa=no])
+AM_CONDITIONAL([HAVE_LIBALSA], [test "x${with_libalsa}" = "xyes"])
+
 AC_CONFIG_FILES([ \
         Makefile \
         linux/Makefile \
