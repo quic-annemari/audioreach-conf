@@ -38,12 +38,22 @@ AC_ARG_WITH([libalsa],
         [with_libalsa=no])
 AM_CONDITIONAL([HAVE_LIBALSA], [test "x${with_libalsa}" = "xyes"])
 
+AC_ARG_WITH([nxp],
+    AS_HELP_STRING([Use nxp based configuration (default is no)]),
+        [with_nxp=$withval],
+        [with_nxp=no])
+AM_CONDITIONAL([VENDOR_NXP], [test "x${with_nxp}" = "xyes"])
+
 AC_CONFIG_FILES([ \
         Makefile \
         linux/Makefile \
         linux/kvh2xml.pc \
         linux/reference/Makefile \
-        linux/reference/config.pc
+        linux/reference/config.pc \
+        nxp/Makefile \
+        nxp/kvh2xml.pc \
+        nxp/reference/Makefile \
+        nxp/reference/config.pc
         ])
 
 
